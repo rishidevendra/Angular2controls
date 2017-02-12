@@ -1,0 +1,7 @@
+﻿<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div *ngIf="username.invalid"> Name is required. </div>
+    <div *ngIf="password.invalid"> Password is required  </div>
+    <input formControlName="username" placeholder="username" required>
+    <input type="password" formControlName="password" placeholder="password" required>
+    <button type="submit">Login</button>
+</form>
